@@ -1,13 +1,4 @@
-#include <unistd.h>
-
-int main(void)
+int ft_is_even(int number)
 {
-    int number = 3;
-
-    for (int i = 0; i < number; i++)
-    {
-        write(1, "Naider\n",8);
-    }
-
-    return 0;
+    return (number % 2 == 0) ? 1 : 0;
 }

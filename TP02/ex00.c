@@ -1,25 +1,6 @@
-#include <stdio.h>
+#include <unistd.h>
 
-int main(void)
+void ft_print(void)
 {
-    int a;
-    int b;
-    int total;
-
-    a = 0;
-    total = 0;
-
-    while (a < 3)
-    {
-        b = 0;
-        while (b < 2)
-        {
-            total = total + 1;
-            b = b + 1;
-        }
-        a = a + 1;
-    }
-
-    printf("%d", total);
-    return 0;
+    write(1, "L’homme PROPOSE, Dieu DISPOSE et quand le diable S’IMPOSE, l’éternel IMPOSE.\n", 84);
 }

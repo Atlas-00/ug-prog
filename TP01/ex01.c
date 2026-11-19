@@ -2,9 +2,10 @@
 
 int main(void)
 {
-    int number;
-    number = 420;
-    number = number + 1;
-    printf("%d \n", number);
+    int number = 15;
+
+    for (int i = 0; i <= number; i++)
+        printf("%d \n", i);
+
     return 0;
 }

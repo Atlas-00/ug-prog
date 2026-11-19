@@ -2,10 +2,11 @@
 
 int main(void)
 {
-    int cote = 5;
-
-    printf("%d\n", cote * 4);
-    printf("%d\n", cote * cote);
+    for (int i = 42; i <= 1337; i++)
+    {
+        if (i % 2 == 0)
+            printf("%d " , i);
+    }
 
     return 0;
 }

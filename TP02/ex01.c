@@ -1,11 +1,8 @@
-#include <stdio.h>
+#include <unistd.h>
 
-int main(void)
-{
-    int number = 15;
-
-    for (int i = 0; i <= number; i++)
-        printf("%d \n", i);
-
-    return 0;
+void ft_print_more(int number) {
+    for (int i = 0; i <= number; i ++)
+    {
+        write(1, "L’homme PROPOSE, Dieu DISPOSE et quand le diable S’IMPOSE, l’éternel IMPOSE.\n", 84);
+    }
 }

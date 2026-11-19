@@ -1,4 +1,17 @@
-int ft_is_even(int number)
+#include <unistd.h>
+
+void ft_triangle(int number) 
 {
-    return (number % 2 == 0) ? 1 : 0;
+    if (number <= 0 )
+        return;
+
+    for (int x = 0; x <= number; x++)
+    {
+        for (int y = 0; y <= x; y++)
+        {
+            write(1, "*", 1);
+        }
+
+        write(1, "\n", 2);
+    }
 }

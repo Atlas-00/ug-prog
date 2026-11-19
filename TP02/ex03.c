@@ -1,12 +1,11 @@
-#include <stdio.h>
-
-int main(void)
+int ft_cumulative(int number) 
 {
-    for (int i = 42; i <= 1337; i++)
+    int sum = 0;
+
+    for (int i = 0; i <= number; i++)
     {
-        if (i % 2 == 0)
-            printf("%d " , i);
+        sum += i;
     }
 
-    return 0;
+    return sum;
 }

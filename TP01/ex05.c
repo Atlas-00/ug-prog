@@ -2,16 +2,14 @@
 
 int main(void)
 {
-    int number = 5;
+    int sum = 0;
 
-    if (number % 2 == 0)
+    for (int i = 0; i <= 1000; i++)
     {
-        printf("pair\n");
+        sum += i;
     }
-    else 
-    {
-        printf("impaire\n");
-    }
+
+    printf("%d \n", sum);
 
     return 0;
 }

@@ -1,16 +1,13 @@
-#include <stdio.h>
+#include <unistd.h>
 
 int main(void)
 {
-    int a;
-    int b;
-    a = 421;
-    b = 4;
+    int number = 3;
 
-    printf("%d\n", a - b);
-    printf("%d\n", a + b);
-    printf("%d\n", a / b);
-    printf("%d\n", a * b);
+    for (int i = 0; i < number; i++)
+    {
+        write(1, "Naider\n",8);
+    }
 
     return 0;
 }
