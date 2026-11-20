@@ -1,4 +1,5 @@
+
 int ft_is_even(int number)
 {
-    return (number % 2 == 0) ? 1 : 0;
+    return (number % 2 == 0) ? 0 : 1;
 }
