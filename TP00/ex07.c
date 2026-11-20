@@ -1,29 +1,7 @@
 #include <stdio.h>
 
-int main(void)
+void check_age_access(int age, int joueur, int adulte)
 {
-    int age = 15;
-    int joueur = 3;
-    int adulte = 0;
-    int reservation = 1;
-
-    if (!reservation)
-    {
-        printf("Réservation obligatoireaq\n");
-        return 0;
-    }
-
-    if (joueur >= 6)
-    {
-        printf("Groupe trop grand\n");
-        return 0;
-    }
-    if (joueur < 2)
-    {
-        printf("Groupe trop petit\n");
-        return 0;
-    }
-
     if (age < 10)
     {
         printf("Accès refusé\n");
@@ -46,6 +24,30 @@ int main(void)
     {
         printf("Accès autorisé\n");
     }
+}
 
+int main(void)
+{
+    int age = 15;
+    int joueur = 3;
+    int adulte = 0;
+    int reservation = 1;
+
+    if (!reservation)
+    {
+        printf("Réservation obligatoireaq\n");
+        return 0;
+    }
+    if (joueur >= 6)
+    {
+        printf("Groupe trop grand\n");
+        return 0;
+    }
+    if (joueur < 2)
+    {
+        printf("Groupe trop petit\n");
+        return 0;
+    }
+    check_age_access(age, joueur, adulte);
     return 0;
 }

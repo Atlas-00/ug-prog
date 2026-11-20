@@ -5,7 +5,7 @@ int main(void)
     for (int i = 42; i <= 1337; i++)
     {
         if (i % 2 == 0)
-            printf("%d " , i);
+            printf("%d\n" , i);
     }
 
     return 0;

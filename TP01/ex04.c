@@ -15,7 +15,7 @@ int main(void)
     // Negative discriminant: no real solutions
     if (delta < 0)
     {
-        printf("Pas de solutions\n");
+        printf("Il exist aucune solutions\n");
         return 0;
     }
 
