@@ -3,9 +3,9 @@
 int main(void)
 {
     // Coefficients of the equation ax^2 + bx + c = 0
-    int a = 5150;
-    int b = 2155;
-    int c = -4015;
+    int a = 0;
+    int b = 0;
+    int c = 0;
 
     // Discriminant: delta = b^2 - 4ac
     int delta = b * b - 4 * a * c;
