@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int age;
+    int age = 20;
 
     if (age <= 0)
         printf("bonjour bébé !\n");
