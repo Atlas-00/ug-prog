@@ -20,6 +20,8 @@ void ft_print_even_numbers_in_range(int start, int end)
             printf("%d", i);
             first = 0;
         }
+        if (i == end)
+            break;
         i += step;
     }
 }
