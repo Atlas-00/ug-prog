@@ -1,5 +1,4 @@
 
-
 int ft_power(int number, int power)
 {
     if (power == 0)
