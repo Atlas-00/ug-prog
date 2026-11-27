@@ -15,4 +15,3 @@ int ft_is_prime(int number)
     }
     return 1;
 }
-

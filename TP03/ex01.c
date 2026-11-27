@@ -12,6 +12,6 @@ void ft_print_even_numbers_in_range(int start, int end)
     for (int i = start; i != end + step; i += step)
     {
         if (i % 2 == 0)
-            printf("%d", i);
+            printf("%d ", i);
     }
 }
