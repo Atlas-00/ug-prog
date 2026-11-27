@@ -29,7 +29,8 @@ void ft_triangle_v2(int number)
             ft_putnbr(y);
             y++;
         }
-        write(1, "\n", 1);
+        if (x != number)
+            write(1, "\n", 1);
         x++;
     }
 }

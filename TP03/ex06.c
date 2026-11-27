@@ -1,3 +1,4 @@
+
 int ft_is_prime(int number)
 {
     int i;

@@ -1,17 +1,23 @@
 #include <unistd.h>
 
-void ft_triangle(int number) 
+void ft_triangle(int number)
 {
-    if (number <= 0 )
-        return;
+    int x;
+    int y;
 
-    for (int x = 0; x <= number; x++)
+    if (number <= 0)
+        return;
+    x = 1;
+    while (x <= number)
     {
-        for (int y = 0; y <= x; y++)
+        y = 0;
+        while (y < x)
         {
             write(1, "*", 1);
+            y++;
         }
-
-        write(1, "\n", 2);
+        if (x != number)
+            write(1, "\n", 1);
+        x++;
     }
 }
