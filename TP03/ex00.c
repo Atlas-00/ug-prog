@@ -1,3 +1,4 @@
+#include <stdio.h>
 
 int ft_power(int number, int power)
 {

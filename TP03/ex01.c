@@ -1,17 +1,24 @@
-#include <stdio.h>
 
 void ft_print_even_numbers_in_range(int start, int end)
 {
     int step;
+    int i;
+    int first;
 
-    if (start > end)
-        step = -1;
-    else
-        step = 1;
+    if (start > end) step = -1;
+    else step = 1;
 
-    for (int i = start; i != end + step; i += step)
+    first = 1;
+    i = start;
+    while ((step == 1 && i <= end) || (step == -1 && i >= end))
     {
         if (i % 2 == 0)
-            printf("%d ", i);
+        {
+            if (!first)
+                printf(" ");
+            printf("%d", i);
+            first = 0;
+        }
+        i += step;
     }
 }
